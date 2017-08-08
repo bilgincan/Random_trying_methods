@@ -1,0 +1,13 @@
+
+
+h1 { color: #f465ff }
+h2 { color: rgb(255,255,0); font-size: 1em }
+em { color: purple }
+h1 + h2 { margin-top: -5mm }
+  div {
+    background-color: lightgrey;
+    width: 1500px;
+    border: 1px red ;
+    padding: 300px;
+    margin: 25px;
+}

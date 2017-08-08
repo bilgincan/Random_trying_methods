@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <link href="C:/Users/Can/Desktop/jquery/jquery.css" rel="stylesheet">
+
 </head>
 <body>
 <h1> Selectors Lab </h1>
 <div id="first_coloum">
 <h2> Selector </h2>
 <p> Type a selector into the text field below and click the Apply button. <br>
-Selector: <br>
-<textarea> </textarea></p>
-<button> Apply </button>
+Selector: <br></p>
+<input id="fill_me"> </input>
+<button class="Apply_button"> Apply </button>
 </div>
 <div id="second_coloum">
 <h2> DOM Sample</h2>
@@ -62,8 +63,10 @@ Selector: <br>
     </tr>
   </tbody>
   </table>
-  <p>Text</p> <input type="text"> </input>
-  <button type="submit"> Submit!</button>
+  <div class="textreform">
+  <p>Text</p> <input type="text" id="input_text"> </input>
+</div>
+  <button type="submit" id="submit_button"> Submit!</button>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

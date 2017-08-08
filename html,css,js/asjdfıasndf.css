@@ -1,0 +1,30 @@
+dl
+{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ddd;
+    border-bottom: 1px solid #ccc;
+
+}
+dt
+{
+  margin: 0px;
+  padding: 0px;
+ display: inline;
+ float: left;
+ width: 200px;
+ font-weight: bold;
+ border-right: 1px dotted #000;
+ margin-right: 10px;
+ background: #ddd;
+}
+dd
+{
+ margin: 0px;
+ padding: 0px;
+ display: inline;
+ float: left;
+ width: 250px;
+ margin-right: 10px;
+}

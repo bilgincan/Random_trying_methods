@@ -1,0 +1,43 @@
+body {
+background-color: #fff;
+}
+
+#middle_area
+{ background-color: #CD7F32;
+overflow: hidden;
+width: 100%auto;
+padding: 40px;
+}
+#left
+{ background-color: #CD7F32;
+float: left;
+margin-right: 20px;
+width: 500px;
+}
+#left1
+{float:left;
+background-color: #CD7F32;
+width: 500px;
+}
+#right
+{float:left;
+background-color: #CD7F32;}
+#undermiddle_area
+{ background-color: #0ff;
+overflow: hidden;
+width: 100%;
+padding: 40px;}
+#underleft
+{background-color: #0ff;
+float:left;
+width:500px;}
+#undermiddle
+{background-color: #0ff;
+float:left;
+width:500px;}
+
+#underright
+{background-color: #0ff;
+float:left;
+width:500px;}
+#underright.h4 {color:#f0f;}
