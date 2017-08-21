@@ -19,7 +19,7 @@ $(document).ready(function()
 
      });
    });
-   $("input:checkbox").click(function(){
+   $("input:checkbox#checkbutton").click(function(){
      $("li").css("color","orange");
    });
    $("#reset_button").click(function(){
