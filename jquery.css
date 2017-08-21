@@ -16,3 +16,10 @@
   padding-right: 15px;
 
 }
+
+.question
+{
+  position:absolute;
+  top: 500px;
+  left: 100px;
+}
