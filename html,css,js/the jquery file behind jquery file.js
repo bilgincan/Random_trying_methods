@@ -1,4 +1,7 @@
 window.alert("CSS1 sayfasına geçiş");
 $(document).ready(function(){
-  $("<p> Hello World!!!</p>").insertBefore("#follow_me");
+  $("<div class='foo'> I have foo!</div><div>I don't</div>")
+  .filter(".foo").click(function() {
+    alert("I'm foo!");
+  }).end().appendTo("#someParentDiv")
   });
