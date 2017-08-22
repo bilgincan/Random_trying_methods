@@ -23,3 +23,9 @@
   top: 500px;
   left: 100px;
 }
+
+#message_text
+{
+  position:absolute;
+  top: 1000px;
+}

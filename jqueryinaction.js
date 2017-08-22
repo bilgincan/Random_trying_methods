@@ -25,4 +25,9 @@ $(document).ready(function()
    $("#reset_button").click(function(){
    window.location.reload();
  });
+
+ $("<p id='First_sentence'> There are </p>").insertAfter("#div_text");
+ $("<p> link(s) on that site. </p>").insertAfter("#First_sentence");
+ var links = $("a").size();
+ console.log(links);
 });
