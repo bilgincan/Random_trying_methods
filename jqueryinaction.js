@@ -12,22 +12,32 @@ $(document).ready(function()
        $(this).animate({
            height: '+=10px'
        });
-   });7
+   })
    $('div').mouseleave(function(){
      $(this).animate({
        height: '-=10px'
 
-     });
-   });
+     })
+   })
+
    $("input:checkbox#checkbutton").click(function(){
-     $("li").css("color","orange");
-   });
+        $("li").css("color","orange");
+
+        $("input:checkbox#checkbutton").click(function(){
+        $("li").css("color","black");
+        })
+    })
+
+
+
+
+
+
+
    $("#reset_button").click(function(){
    window.location.reload();
  });
 
  $("<p id='First_sentence'> There are </p>").insertAfter("#div_text");
  $("<p> link(s) on that site. </p>").insertAfter("#First_sentence");
- var links = $("a").size();
- console.log(links);
 });
