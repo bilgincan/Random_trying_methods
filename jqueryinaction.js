@@ -9,14 +9,18 @@ $(document).ready(function()
   });
   $("#delete_button").click(function()
 {
-  $("li").css("background-color","white");
+  var color = $("body").css("background-color");
+  $("li").css("background-color",color);
   $("#input_text").val("") ;
 })
   $("div").mouseenter(function() {
        $(this).animate({
            height: '+=100px'
        });
-       $(this).append("<p id=extra>There is nothing out there, this is only to be cool.</p>");
+       $(this).append("<p id=extra>click me!</p>");
+       $("p#extra").click(function(){
+         window.open("The_hidden_jquery_webpages/Nebenseite1/the jquery file behind jquery file.html");
+       })
    })
    $('div').mouseleave(function(){
      $(this).animate({
@@ -37,8 +41,6 @@ $(document).ready(function()
        $("li").css("color","orange");
      }
      })
-
-
   $("#control_button").click(function()
 {
   $("<div id='checked'> </div>").insertAfter("table#lang");
@@ -48,12 +50,19 @@ $(document).ready(function()
 };
 countChecked();
 })
-
-
    $("#reset_button").click(function(){
    window.location.reload();
  });
-
  $("<p id='First_sentence'> There are </p>").insertAfter("#div_text");
  $("<p> link(s) on that site. </p>").insertAfter("#First_sentence");
 });
+$("#changer").click(function(){
+  var color_pad = $("#color_name").val();
+  $("body").css("background-color",color_pad);
+  $("li").css("background-color",color_pad);
+  if (color_pad === "black" || color_pad === "#0a0f0f" || color_pad === "#141f1f")
+  {$("p#background_changer").css("color","white");}
+  else {
+    $("p#background_changer").css("color","black");
+  }
+})

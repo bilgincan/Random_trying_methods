@@ -8,8 +8,9 @@
 #second_coloum
 {
   position:absolute;
-  left:600px;
+  left:50%;
   top:0px;
+  bottom:15%;
   border:5px;
   border-style: dotted;
   padding-left: 15px;
@@ -28,4 +29,15 @@
 {
   position:absolute;
   top: 1000px;
+}
+diva.background_changer
+{
+  position: absolute;
+  top: 50%;
+}
+#changer{
+  position: absolute;
+  background-color:yellow;
+  color:#0000ff;
+  left:63%;
 }
