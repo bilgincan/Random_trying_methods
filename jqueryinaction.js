@@ -14,14 +14,15 @@ $(document).ready(function()
 })
   $("div").mouseenter(function() {
        $(this).animate({
-           height: '+=10px'
+           height: '+=100px'
        });
+       $(this).append("<p id=extra>There is nothing out there, this is only to be cool.</p>");
    })
    $('div').mouseleave(function(){
      $(this).animate({
-       height: '-=10px'
-
+       height: '-=100px'
      })
+     $(this).children("p#extra").remove();
    })
    var clicks = 0;
    $("input:checkbox#checkbutton").click(function color_changer(){
@@ -37,7 +38,7 @@ $(document).ready(function()
      }
      })
 
-$(".radio").change(function(){
+
   $("#control_button").click(function()
 {
   $("<div id='checked'> </div>").insertAfter("table#lang");
@@ -46,7 +47,6 @@ $(".radio").change(function(){
   $( "div#checked" ).text( n + (n === 1 ? " is" : " are") + " checked!" );
 };
 countChecked();
-})
 })
 
 
