@@ -41,3 +41,14 @@ diva.background_changer
   color:#0000ff;
   left:63%;
 }
+ color
+ {
+   height:20px;
+   width:20px;
+   display: inline-block;
+ }
+ .color
+ {
+   position:absolute;
+   top:400px;
+ }

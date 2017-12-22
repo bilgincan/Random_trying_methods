@@ -13,6 +13,7 @@ $(document).ready(function()
   $("li").css("background-color",color);
   $("#input_text").val("") ;
 })
+//mouse enter mouse leave functions
   $("div").mouseenter(function() {
        $(this).animate({
            height: '+=100px'
@@ -28,6 +29,7 @@ $(document).ready(function()
      })
      $(this).children("p#extra").remove();
    })
+//Checkbox coloring function
    var clicks = 0;
    $("input:checkbox#checkbutton").click(function color_changer(){
      clicks += 1;
@@ -41,6 +43,7 @@ $(document).ready(function()
        $("li").css("color","orange");
      }
      })
+//Checking radio button
   $("#control_button").click(function()
 {
   $("<div id='checked'> </div>").insertAfter("table#lang");
@@ -56,6 +59,7 @@ countChecked();
  $("<p id='First_sentence'> There are </p>").insertAfter("#div_text");
  $("<p> link(s) on that site. </p>").insertAfter("#First_sentence");
 });
+//Changing the body color
 $("#changer").click(function(){
   var color_pad = $("#color_name").val();
   $("body").css("background-color",color_pad);
@@ -65,4 +69,9 @@ $("#changer").click(function(){
   else {
     $("p#background_changer").css("color","black");
   }
+})
+//to changing color of the site via clicking
+$("color").click(function(){
+  var body_color = $(this).css("background-color");
+  $("body").css("background-color",body_color);
 })
